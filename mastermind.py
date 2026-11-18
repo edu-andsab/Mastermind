@@ -7,11 +7,17 @@ for i in range(4):
     kod.append(ran)
 print(kod)
 print("Datorn kommer att slumpa fram en kod på fyra siffror mellan 1 och 6. Du ska försöka gissa denna kods siffror på max 12 drag. Efter respektive gissning så kommer du att få en respons:☑ rätt,☒ fel. För de siffror som inte är med i koden ges ingen markering.")
+def drag():
+    print("Drag #		Drag 		Feedback \n ---------------------------------")
+    for i in range(12,-1,-1):
+        print(i,"\n")
+
 while True:
     Gissad = []
     Gissa = input("Gissa talet ---> ")
     index = 0
     Nummer = kod.copy()
+    #drag()
     for i in Gissa:
          
         
